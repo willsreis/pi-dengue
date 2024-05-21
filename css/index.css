@@ -1,0 +1,62 @@
+.menu{
+    font-family: 'Arbutus Slab';
+    width: 100%;
+    background-color: #EB5D5D;
+    display: flex;
+    justify-content: space-around;
+    height: 1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.banner{
+    background-color: #f6e013;
+}
+
+.banner h1{
+    position: absolute;
+    padding-left: 22.25rem;
+    font-size: 3.125rem;
+    font-family: 'Cinzel';
+    padding-top: 2.813rem;
+}
+
+.banner p{
+    position: flex;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+/*.banner{
+    height: 10rem;
+    display: flex;
+    background-color: #f6e013;
+    flex-start: 22.25rem;
+    justify-content: space-around;
+}
+
+.banner h1{
+    font-family: 'Cinzel';
+    font-size: 3.125rem;
+    padding-top: 2.813rem;
+}*/
+
+.carrossel{
+    min-height: 20.938rem;
+    background-color:#f6df1321;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 1.438;
+    text-align: center;
+    background-color: #eb5d5d
+}
+
+footer{
+    text-align: center;
+    font-family: 'Advent Pro';
+    width: 100%;
+    position: absolute;
+    background-color: #f6e013
+}
