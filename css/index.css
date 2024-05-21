@@ -9,6 +9,11 @@
     padding-bottom: 1.25rem;
 }
 
+.menu a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .banner{
     background-color: #f6e013;
 }
