@@ -15,21 +15,42 @@
 }
 
 .banner{
+    height: 10rem;
+    display: flex;
     background-color: #f6e013;
+    justify-content: space-around;
 }
 
 .banner h1{
-    position: absolute;
-    padding-left: 22.25rem;
-    font-size: 3.125rem;
     font-family: 'Cinzel';
-    padding-top: 2.813rem;
+    font-size: 3.125rem;
+    padding-top: 3.4rem;
 }
 
-.banner p{
-    position: flex;
-    text-align: right;
-    padding-right: 1rem;
+.carrossel{
+    background-color:#f6df1361;
+    height: 20.938rem;
+}
+
+h2{
+    font-weight: bold;
+    font-family: 'Gudea';
+    text-align: center;
+    margin-left: 5.875rem;
+    font-size: 1.438rem;
+    background-color: #EB5D5D;
+    border-radius: 0.938rem;
+    width: 82.52%;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    min-width: 53.125rem;
+}
+
+.paragrafoum, .paragrafodois, .paragrafotres, .paragrafoquatro, .paragrafocinco, .paragrafoseis{
+    font-family: 'Gudea';
+    font-size: 1.125rem;
+    margin-left: 5.875rem;
+    margin-right: 5.875rem;
 }
 
 /*.banner{
@@ -56,6 +77,10 @@ h2{
     font-size: 1.438;
     text-align: center;
     background-color: #eb5d5d
+}
+
+.paragrafo p{
+    justify-self: auto;
 }
 
 footer{
