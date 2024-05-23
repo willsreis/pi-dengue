@@ -1,3 +1,102 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* config do carrossel de imagens*/
+/* .botoes-carrossel {
+  margin: 0;
+  top: 10vw;
+  padding-left: 25vw;
+  display: flex;
+  justify-content: center;
+  gap: 20px; */
+  /* border: red solid; */
+/* }
+
+.botoes-carrossel .botao {
+  margin: 0;
+  background-color: #000000;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer; */
+  /* border-color: #c51818; */
+/* }
+ 
+.botoes-carrossel .botao.selecionado {
+  background-color: #1d8346;
+}
+ 
+.carrossel { */
+  /* position: fixed; */
+  /* margin: 0;
+  top: 0;
+  padding-top: 20vh;
+ 
+  padding-left: 50vw;
+  width: 100%; */
+  /* z-index: -1; */
+/* }
+ 
+.imagem {
+  margin: 1vh 1vw;
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover; */
+  /* não deixa a imagem ficar distorcida*/
+  /* display: none; */
+  /* border: red solid; */
+/* }
+ 
+.imagem.ativa {
+  display: block;
+  animation: mudarImagem 0.7s;
+}
+ 
+.imagem.ativa {
+  display: block;
+  animation: mudarImagem 0.7s;
+}
+ 
+@keyframes mudarImagem {
+  from {
+    opacity: 0.85;
+  }
+ 
+  to {
+    opacity: 1;
+  }
+} */
+
+
+/* fim do código carrossel manual*/
+
+/* #slider {
+    top: 10px;
+    width: 90%;
+    max-width: 1080px;
+    height: 75vw;
+    max-height: 500px;
+    position: relative;
+}
+ 
+#slider img {
+    opacity: 0;
+    position: absolute;
+    left: 116px;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    transition: opacity 50ms;
+}
+ 
+#slider img.selected {
+    opacity: 1;
+} */
+/* fim do slider automatico */
+
 .menu{
     font-family: 'Arbutus Slab';
     width: 100%;
@@ -12,6 +111,13 @@
 .menu a{
     cursor: pointer;
     text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    padding-bottom: 1em;
+    border-bottom: 0.1em solid #f6e013;
+    font-weight: bold;
 }
 
 .banner{
@@ -84,9 +190,11 @@ h2{
 }
 
 footer{
+    padding-top: 0.5rem;
     text-align: center;
     font-family: 'Advent Pro';
     width: 100%;
+    height: 1.563rem;
     position: absolute;
-    background-color: #f6e013
+    background-color: #f6e013;
 }
