@@ -97,6 +97,10 @@ html{
 } */
 /* fim do slider automatico */
 
+body{
+  background-color: #F3FDDF;
+}
+
 .menu{
     font-family: 'Arbutus Slab';
     width: 100%;
@@ -133,30 +137,42 @@ html{
     padding-top: 3.4rem;
 }
 
-.carrossel{
-    background-color:#f6df1361;
-    height: 20.938rem;
-}
-
 h2{
     font-weight: bold;
     font-family: 'Gudea';
     text-align: center;
-    margin-left: 5.875rem;
+    /* margin-left: 5.875rem; */
+    margin: auto;
     font-size: 1.438rem;
     background-color: #EB5D5D;
     border-radius: 0.938rem;
     width: 82.52%;
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
-    min-width: 53.125rem;
+    /* min-width: 53.125rem; */
+    min-width: 82.5%;
 }
 
-.paragrafoum, .paragrafodois, .paragrafotres, .paragrafoquatro, .paragrafocinco, .paragrafoseis{
+.paragrafo{
     font-family: 'Gudea';
     font-size: 1.125rem;
-    margin-left: 5.875rem;
-    margin-right: 5.875rem;
+    text-align: center;
+    width: 82.5%;
+    margin: auto;
+}
+
+.paragrafoum{
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragrafoum p{
+  padding-top: 1.438rem;
+  text-align: center;
+}
+
+.paragrafoum img{
+  margin-top: 0.563;
 }
 
 /*.banner{
@@ -176,13 +192,6 @@ h2{
 .carrossel{
     min-height: 20.938rem;
     background-color:#f6df1321;
-}
-
-h2{
-    font-weight: bold;
-    font-size: 1.438;
-    text-align: center;
-    background-color: #eb5d5d
 }
 
 .paragrafo p{
