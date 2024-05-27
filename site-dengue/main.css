@@ -1,16 +1,209 @@
-header h1 {
-    text-align: center;  
-    background-color: rgb(248, 208, 28);
-    padding: 20px;
+html{
+    scroll-behavior: smooth;
 }
 
-nav {
-    text-align: center;
-    background-color: rgb(248, 28, 28);
+
+/* config do carrossel de imagens*/
+/* .botoes-carrossel {
+  margin: 0;
+  top: 10vw;
+  padding-left: 25vw;
+  display: flex;
+  justify-content: center;
+  gap: 20px; */
+  /* border: red solid; */
+/* }
+
+.botoes-carrossel .botao {
+  margin: 0;
+  background-color: #000000;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer; */
+  /* border-color: #c51818; */
+/* }
+ 
+.botoes-carrossel .botao.selecionado {
+  background-color: #1d8346;
+}
+ 
+.carrossel { */
+  /* position: fixed; */
+  /* margin: 0;
+  top: 0;
+  padding-top: 20vh;
+ 
+  padding-left: 50vw;
+  width: 100%; */
+  /* z-index: -1; */
+/* }
+ 
+.imagem {
+  margin: 1vh 1vw;
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover; */
+  /* não deixa a imagem ficar distorcida*/
+  /* display: none; */
+  /* border: red solid; */
+/* }
+ 
+.imagem.ativa {
+  display: block;
+  animation: mudarImagem 0.7s;
+}
+ 
+.imagem.ativa {
+  display: block;
+  animation: mudarImagem 0.7s;
+}
+ 
+@keyframes mudarImagem {
+  from {
+    opacity: 0.85;
+  }
+ 
+  to {
+    opacity: 1;
+  }
+} */
+
+
+/* fim do código carrossel manual*/
+
+/* #slider {
+    top: 10px;
+    width: 90%;
+    max-width: 1080px;
+    height: 75vw;
+    max-height: 500px;
+    position: relative;
+}
+ 
+#slider img {
+    opacity: 0;
+    position: absolute;
+    left: 116px;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    transition: opacity 50ms;
+}
+ 
+#slider img.selected {
+    opacity: 1;
+} */
+/* fim do slider automatico */
+
+body{
+  background-color: #F3FDDF;
+}
+
+.menu{
+    font-family: 'Arbutus Slab';
+    width: 100%;
+    background-color: #EB5D5D;
     display: flex;
+    justify-content: space-around;
+    height: 1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.menu a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    padding-bottom: 1em;
+    border-bottom: 0.1em solid #f6e013;
+    font-weight: bold;
+}
+
+.banner{
+    height: 10rem;
+    display: flex;
+    background-color: #f6e013;
     justify-content: space-around;
 }
 
-h1 {
+.banner h1{
+    font-family: 'Cinzel';
+    font-size: 3.125rem;
+    padding-top: 3.4rem;
+}
+
+h2{
+    font-weight: bold;
+    font-family: 'Gudea';
     text-align: center;
+    /* margin-left: 5.875rem; */
+    margin: auto;
+    font-size: 1.438rem;
+    background-color: #EB5D5D;
+    border-radius: 0.938rem;
+    width: 82.52%;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    /* min-width: 53.125rem; */
+    min-width: 82.5%;
+}
+
+.paragrafo{
+    font-family: 'Gudea';
+    font-size: 1.125rem;
+    text-align: center;
+    width: 82.5%;
+    margin: auto;
+}
+
+.paragrafoum{
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragrafoum p{
+  padding-top: 1.438rem;
+  text-align: center;
+}
+
+.paragrafoum img{
+  margin-top: 0.563;
+}
+
+/*.banner{
+    height: 10rem;
+    display: flex;
+    background-color: #f6e013;
+    flex-start: 22.25rem;
+    justify-content: space-around;
+}
+
+.banner h1{
+    font-family: 'Cinzel';
+    font-size: 3.125rem;
+    padding-top: 2.813rem;
+}*/
+
+.carrossel{
+    min-height: 20.938rem;
+    background-color:#f6df1321;
+}
+
+.paragrafo p{
+    justify-self: auto;
+}
+
+footer{
+    padding-top: 0.5rem;
+    text-align: center;
+    font-family: 'Advent Pro';
+    width: 100%;
+    height: 1.563rem;
+    position: absolute;
+    background-color: #f6e013;
 }
