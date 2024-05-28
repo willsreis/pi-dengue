@@ -101,6 +101,12 @@ body{
   background-color: #F3FDDF;
 }
 
+.voltar{
+  position: fixed;
+  bottom: 1rem;
+  right: 1.6rem;
+}
+
 .menu{
     font-family: 'Arbutus Slab';
     width: 100%;
@@ -110,7 +116,6 @@ body{
     height: 1rem;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-    position: fixed;
 }
 
 .menu a{
