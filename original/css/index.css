@@ -117,9 +117,10 @@ body{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     position: fixed;
+    border-bottom: medium solid #f6e013;
 }
 
-#menu-fantasma{
+#topo{
     width: 100%;
     background-color: #EB5D5D;
     height: 1rem;

@@ -1,0 +1,9 @@
+nav{
+    font-family:'Arbutus-Slab';
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-brand{
+    cursor: default;
+}
