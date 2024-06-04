@@ -39,3 +39,18 @@ nav{
     font-size: 3.125rem;
     padding-top: 2.813rem;
 }
+
+.carousel-inner{
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon .carousel-control-next{
+    position: absolute;
+    width: 70%;
+    margin-left: 15%;
+    background-color: black;
+}
