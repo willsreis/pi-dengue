@@ -10,6 +10,7 @@ nav{
     background-color: #EB5D5D;
     min-width: 100%;
     font-weight: bold;
+    margin-bottom: 100px;
 }
 
 /* cor não esta sendo aplicada */
@@ -27,11 +28,17 @@ nav{
     font-weight: bold;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     .navbar-brand{
         display: none
     }
 }
+
+/* @media screen and (min-width: 576px) {
+    .navbar-brand{
+        display: none
+    }
+} */
 
 .banner{
     margin-top: 3.5rem;
@@ -69,4 +76,11 @@ h2{
     background-color: #EB5D5D;
     text-align: center;
     font-family: "Gudea";
+    height: 2.5rem;
+    border-radius: 0.938rem;
+}
+
+.paragrafo{
+    width: 83.33%;
+    margin-left: 8.33%;
 }

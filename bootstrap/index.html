@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -20,7 +21,8 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+    <!--navbar-expand-sm alterado para navbar-expand-md (breakpoint: 576px -> 768px) -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light">
         <a class="navbar-brand" href="#">Navegação</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
@@ -29,7 +31,7 @@
         <div class="collapse navbar-collapse justify-content-around barra-navegacao" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">O que é?<span class="sr-only">(Página atual)</span></a>
+                    <a class="nav-link" href="#paragrafoum">O que é?<span class="sr-only">(Página atual)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Histórico</a>
@@ -54,73 +56,122 @@
     </nav>
     <section class="banner">
         <h1>XÔ DENGUE!</h1>
-        <p><img src="./images/fotologo.png" alt='Imagem de mosquito da dengue riscado com um sinal de proibido, acompanhada do texto "Todos contra a dengue"'>
+        <p><img src="./images/fotologo.png"
+                alt='Imagem de mosquito da dengue riscado com um sinal de proibido, acompanhada do texto "Todos contra a dengue"'>
         </p>
     </section>
     <!--inicio carrossel-->
     <!--indicadores (barrinhas) do carrossel-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <!--imagens do carrossel-->
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" id="primeiro_slide" src="images/fotoesquerda.png" alt="Primeiro Slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" id="segundo_slide" src="images/fotocentro.jpg" alt="Terceiro Slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" id="terceiro_slide" src="images/fotodireita.png" alt="Terceiro Slide">
-          </div>
+            <div class="carousel-item active">
+                <img class="d-block w-100" id="primeiro_slide" src="images/fotoesquerda.png" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" id="segundo_slide" src="images/fotocentro.jpg" alt="Terceiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" id="terceiro_slide" src="images/fotodireita.png" alt="Terceiro Slide">
+            </div>
         </div>
         <!--controles do carrossel-->
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Próximo</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
         </a>
-      </div>
-      <!--fim carrossel-->
-      
-    <h2>Histórico</h2>
+    </div>
+    <!--fim carrossel-->
+    <section class="paragrafoum paragrafo" id="paragrafoum">
+        <h2>O que é?</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis posuere arcu, non interdum nibh dignissim ac. Duis euismod vitae magna ut vulputate. Nulla aliquet nisl feugiat euismod vehicula. Proin vestibulum, nunc placerat mattis rutrum, dui turpis dignissim elit, a condimentum nulla dolor quis libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis feugiat velit eu sapien fringilla, blandit venenatis urna vestibulum. Vivamus hendrerit orci aliquet enim dignissim aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam non porta lectus. Nullam massa odio, porttitor vitae finibus vel, venenatis eu libero. Sed tincidunt urna ornare sapien porttitor, a ullamcorper felis lobortis. Sed convallis ligula tempus, suscipit nisl vitae, blandit odio.
+            Curabitur sit amet felis dolor. Vivamus sit amet nibh condimentum, sollicitudin quam eu, pulvinar tortor.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent
+            convallis at arcu vel ornare. Suspendisse ornare urna a malesuada dictum. Aliquam non libero ut purus congue
+            iaculis eget non ipsum. Quisque vitae tortor luctus mi vestibulum imperdiet. Curabitur accumsan lectus
+            lorem, non tempus felis ullamcorper sit amet. Vestibulum a condimentum lorem, rutrum eleifend est. Nunc
+            aliquet neque sit amet sapien gravida venenatis.
         </p>
-    <p>    
-        Curabitur sit amet felis dolor. Vivamus sit amet nibh condimentum, sollicitudin quam eu, pulvinar tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent convallis at arcu vel ornare. Suspendisse ornare urna a malesuada dictum. Aliquam non libero ut purus congue iaculis eget non ipsum. Quisque vitae tortor luctus mi vestibulum imperdiet. Curabitur accumsan lectus lorem, non tempus felis ullamcorper sit amet. Vestibulum a condimentum lorem, rutrum eleifend est. Nunc aliquet neque sit amet sapien gravida venenatis.
-        
-        In vestibulum felis et rutrum accumsan. Quisque semper euismod nisl, ac laoreet quam cursus euismod. Integer quis lorem quis metus fringilla varius id non elit. Cras vestibulum volutpat metus ac bibendum. Nullam ut rhoncus turpis, mollis malesuada nunc. Vestibulum in volutpat purus. Duis nec mollis dolor. Donec non gravida ipsum. Pellentesque et felis hendrerit, pretium tortor nec, semper lorem. Aliquam eget nisl mauris. Duis ac placerat libero, ut dictum ante. Phasellus imperdiet, lorem sit amet mattis mollis, mi justo fermentum mauris, et condimentum nunc ipsum at dolor. Nullam dignissim eget enim et scelerisque. Sed semper elit quam, in convallis urna maximus ut. Nullam ornare aliquet volutpat. Vivamus elementum id nisi in tempus.
-        
-        Ut vitae pharetra neque, a condimentum felis. Nam ac blandit felis. Vivamus lobortis mi quis ipsum vulputate egestas. In hac habitasse platea dictumst. Nam porttitor interdum tristique. In sed nisi orci. Morbi faucibus justo in lectus convallis, id tempor felis consequat. Maecenas vulputate turpis vitae tincidunt iaculis. Integer non lectus vitae dolor laoreet tincidunt. Pellentesque diam nunc, auctor sed aliquet at, tincidunt ac ligula. Nullam vel convallis ligula.
-        
-        Curabitur posuere nisi quis imperdiet elementum. Nulla accumsan maximus rutrum. Vivamus eget blandit risus. Ut convallis vulputate mi, vel tincidunt nisl scelerisque ut. Nam blandit venenatis quam vitae aliquam. Etiam gravida dolor finibus, mollis turpis vitae, varius sem. Pellentesque sed velit sit amet lacus convallis ornare. Maecenas volutpat porttitor rhoncus. Ut ut lectus magna. Pellentesque tellus lorem, pellentesque nec mollis at, tristique ac sapien.
-        
-        Duis rutrum urna ac elit varius, at efficitur mauris tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus malesuada libero id mi elementum, sed dictum ante porta. Quisque ultrices imperdiet sapien nec lacinia. Aenean volutpat pretium nisi non mattis. Cras facilisis interdum gravida. Curabitur consequat egestas dolor, suscipit volutpat nisi. In eu lorem commodo, malesuada sapien sit amet, pharetra ipsum. Nulla eget consectetur nisl, et interdum justo. Nulla maximus elit vitae tellus ullamcorper pulvinar sit amet vitae nulla. Proin rhoncus sem magna, nec sodales massa vehicula tristique. Etiam malesuada velit eu rutrum feugiat.
-        
-        Donec hendrerit, libero et sagittis condimentum, lacus lacus cursus lacus, ut molestie tortor dui non enim. Donec malesuada, nisi sit amet lacinia volutpat, libero risus feugiat mauris, in malesuada est neque eu augue. Sed porttitor, nibh vitae eleifend facilisis, mauris nisl molestie sem, sit amet sagittis nisl dui vel mi. Vestibulum facilisis ac dolor a cursus. Proin sed odio tincidunt, pretium urna tristique, viverra tellus. Suspendisse vestibulum ut justo iaculis consectetur. In ut congue orci, ac lobortis libero. Praesent non mollis neque.
-        
-        Cras arcu diam, molestie sed enim vulputate, ultrices auctor erat. Nunc mattis, dui non pellentesque tincidunt, mi justo gravida ante, nec posuere magna felis ac est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae justo a felis interdum maximus. Donec vel dignissim dolor. Maecenas in enim tincidunt, ultricies tellus convallis, volutpat nunc. Pellentesque viverra felis non libero ornare, eget dapibus sapien mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam nec elementum eros. Praesent rhoncus dignissim dui, eget semper ipsum blandit molestie. Maecenas sagittis, ex ut consequat dignissim, tortor nulla bibendum enim, ut aliquam tortor magna sodales est. Suspendisse sapien risus, maximus quis augue et, placerat feugiat augue.
-        
-        Fusce sodales massa in odio vulputate laoreet. Quisque lacus dolor, tincidunt ac neque sed, venenatis fringilla ipsum. Suspendisse facilisis quam non lacinia fringilla. Curabitur at erat dignissim, pretium mi nec, iaculis sapien. In aliquet ornare tincidunt. Suspendisse a ipsum auctor, mollis metus suscipit, viverra massa. Nam metus mi, dictum congue tortor eu, pharetra faucibus dolor. Maecenas malesuada laoreet massa. Proin vestibulum imperdiet porta. Donec vel est et lorem ullamcorper dapibus.
-        
-        Proin lacus lacus, venenatis ac laoreet nec, sodales a eros. Phasellus id eros felis. Etiam lacinia lacinia ornare. Nam accumsan, elit in fringilla molestie, augue nisl fermentum metus, a consectetur nisl lacus id est. Proin ultrices pulvinar ornare. Nam ipsum dolor, pretium at eleifend hendrerit, porttitor non sem. In feugiat scelerisque rutrum. Cras ligula neque, egestas nec metus in, fringilla malesuada ante.
-        
-        Aliquam ut ultricies elit, et laoreet ipsum. Vestibulum rutrum pellentesque pellentesque. Sed et tortor vitae enim lobortis molestie. Aenean imperdiet mauris ut lorem cursus semper. Proin ultrices, magna vitae venenatis ultrices, mauris ex sodales nunc, quis pharetra risus est eu lorem. Morbi gravida orci pellentesque sapien rutrum, sed volutpat nulla mattis. Morbi vel dui ac dui luctus accumsan sed eu est. Duis a diam id augue blandit sodales et at augue. Nam sollicitudin feugiat urna fermentum maximus.
-        
-        Aenean arcu dui, volutpat non venenatis a, cursus nec turpis. Vivamus vestibulum ipsum consequat nibh luctus ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut eget fermentum eros. Phasellus vel maximus neque, nec pretium dui. Mauris blandit elit semper, egestas diam sed, consequat dolor. Ut aliquam massa velit, eu vehicula erat blandit in. Sed bibendum efficitur vestibulum.
-        
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eu dui aliquam, consectetur tortor non, venenatis massa. Pellentesque tincidunt vel turpis tempus porttitor. Fusce lobortis venenatis est, sed imperdiet quam sodales quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vel dictum ex. Nulla ac rutrum leo, a viverra nisi. Aenean sollicitudin magna ut nunc mollis pharetra. Pellentesque at ipsum porta, hendrerit nibh sed, aliquam ex. Duis eu ante euismod, facilisis risus sit amet, varius elit. Nulla a ex non neque vehicula ullamcorper. Phasellus velit orci, venenatis vitae ultrices eu, consectetur a nunc.
-        
-        Aliquam eget elit ornare, sollicitudin lorem mollis, aliquam urna. Praesent quis porttitor ipsum. Suspendisse odio sem, maximus sed purus ac, ullamcorper euismod est. In justo lacus, consectetur id velit eget, tristique pretium ex. Proin pretium rutrum tellus ut porta. Proin nisl dui, pellentesque non sagittis in, blandit viverra sapien. Phasellus commodo posuere risus ac lacinia. Vestibulum non placerat metus, in congue nisi. Cras dapibus, risus a bibendum euismod, justo nisi dictum mi, nec elementum erat lorem non ligula. Vestibulum venenatis ornare orci, non eleifend dolor vulputate id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer bibendum ultrices velit eu posuere. Cras laoreet orci odio, eget consectetur enim venenatis non.
-        
-        Sed commodo luctus sapien at maximus. Donec tincidunt libero augue, non consectetur diam iaculis ac. Vestibulum varius ut urna et condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat volutpat nibh et aliquam. Sed hendrerit tortor a malesuada feugiat. Cras sit amet sem magna. </p>
+    </section>
+    <section class="historico paragrafo" id="historico">
+        <h2>Histórico</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis posuere arcu, non interdum nibh
+            dignissim ac. Duis euismod vitae magna ut vulputate. Nulla aliquet nisl feugiat euismod vehicula. Proin
+            vestibulum, nunc placerat mattis rutrum, dui turpis dignissim elit, a condimentum nulla dolor quis libero.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis feugiat velit
+            eu sapien fringilla, blandit venenatis urna vestibulum. Vivamus hendrerit orci aliquet enim dignissim
+            aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam non porta lectus. Nullam massa
+            odio, porttitor vitae finibus vel, venenatis eu libero. Sed tincidunt urna ornare sapien porttitor, a
+            ullamcorper felis lobortis. Sed convallis ligula tempus, suscipit nisl vitae, blandit odio.
+        </p>
+    </section>
+    <section class="atualmente paragrafo" id="atualmente">
+        <h2 class=>Atualmente</h2>
+        <p>
+            In vestibulum felis et rutrum accumsan. Quisque semper euismod nisl, ac laoreet quam cursus euismod. Integer
+            quis lorem quis metus fringilla varius id non elit. Cras vestibulum volutpat metus ac bibendum. Nullam ut
+            rhoncus turpis, mollis malesuada nunc. Vestibulum in volutpat purus. Duis nec mollis dolor. Donec non
+            gravida ipsum. Pellentesque et felis hendrerit, pretium tortor nec, semper lorem. Aliquam eget nisl mauris.
+            Duis ac placerat libero, ut dictum ante. Phasellus imperdiet, lorem sit amet mattis mollis, mi justo
+            fermentum mauris, et condimentum nunc ipsum at dolor. Nullam dignissim eget enim et scelerisque. Sed semper
+            elit quam, in convallis urna maximus ut. Nullam ornare aliquet volutpat. Vivamus elementum id nisi in
+            tempus.
+        </p>
+    </section>
+    <section class="sintomas paragrafo" id="sintomas">
+        <h2>Sintomas</h2>
+        <p>
+            Ut vitae pharetra neque, a condimentum felis. Nam ac blandit felis. Vivamus lobortis mi quis ipsum vulputate
+            egestas. In hac habitasse platea dictumst. Nam porttitor interdum tristique. In sed nisi orci. Morbi
+            faucibus justo in lectus convallis, id tempor felis consequat. Maecenas vulputate turpis vitae tincidunt
+            iaculis. Integer non lectus vitae dolor laoreet tincidunt. Pellentesque diam nunc, auctor sed aliquet at,
+            tincidunt ac ligula. Nullam vel convallis ligula.
+        </p>
+    </section>
+    <section class="diagnostico paragrafo" id="diagnostico">
+        <h2>Diagnóstico</h2>
+        <p>
+            Curabitur posuere nisi quis imperdiet elementum. Nulla accumsan maximus rutrum. Vivamus eget blandit risus.
+            Ut convallis vulputate mi, vel tincidunt nisl scelerisque ut. Nam blandit venenatis quam vitae aliquam.
+            Etiam gravida dolor finibus, mollis turpis vitae, varius sem. Pellentesque sed velit sit amet lacus
+            convallis ornare. Maecenas volutpat porttitor rhoncus. Ut ut lectus magna. Pellentesque tellus lorem,
+            pellentesque nec mollis at, tristique ac sapien.
+        </p>
+    </section>
+    <section class="tratamento paragrafo" id="tratamento">
+        <h2>Tratamento</h2>
+        <p>
+            Duis rutrum urna ac elit varius, at efficitur mauris tristique. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Vivamus malesuada libero id mi elementum, sed dictum
+            ante porta. Quisque ultrices imperdiet sapien nec lacinia. Aenean volutpat pretium nisi non mattis. Cras
+            facilisis interdum gravida. Curabitur consequat egestas dolor, suscipit volutpat nisi. In eu lorem commodo,
+            malesuada sapien sit amet, pharetra ipsum. Nulla eget consectetur nisl, et interdum justo. Nulla maximus
+            elit vitae tellus ullamcorper pulvinar sit amet vitae nulla. Proin rhoncus sem magna, nec sodales massa
+            vehicula tristique. Etiam malesuada velit eu rutrum feugiat.
+        </p>
+    </section>
+    <section class="prevencao paragrafo" id="prevencao">
+        <h2>Prevenção</h2>
+        <p>
+            Donec hendrerit, libero et sagittis condimentum, lacus lacus cursus lacus, ut molestie tortor dui non enim.
+            Donec malesuada, nisi sit amet lacinia volutpat, libero risus feugiat mauris, in malesuada est neque eu
+            augue. Sed porttitor, nibh vitae eleifend facilisis, mauris nisl molestie sem, sit amet sagittis nisl dui
+            vel mi. Vestibulum facilisis ac dolor a cursus. Proin sed odio tincidunt, pretium urna tristique, viverra
+            tellus. Suspendisse vestibulum ut justo iaculis consectetur. In ut congue orci, ac lobortis libero. Praesent
+            non mollis neque.
+        </p>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
