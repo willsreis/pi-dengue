@@ -45,6 +45,11 @@ main {
     border-radius: 0px 0px 30px 30px;
 }
 
+.carousel{
+    display: flex;
+    justify-content: center;
+}
+
 .carousel-inner {
     margin-top: 2rem;
     width: 70%;
