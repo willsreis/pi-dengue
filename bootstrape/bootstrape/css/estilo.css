@@ -49,6 +49,10 @@ main {
     border-radius: 0px 0px 30px 30px;
 }
 
+.img{
+    width: 200px;
+}
+
 .carousel{
     display: flex;
     justify-content: center;

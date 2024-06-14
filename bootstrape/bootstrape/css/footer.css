@@ -1,8 +1,9 @@
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 footer{
     margin-top: 1rem;
+    width: 100%;
+    margin: 0;
 }
 
 section {
