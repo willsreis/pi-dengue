@@ -1,5 +1,8 @@
 * {
     --bgNav: #B4E4D2;
+    --bgHero:#4CABA6;
+    --bgTema: #2fd1c8;
+
 }
 
 html {
@@ -51,14 +54,14 @@ main {
 }
 
 .hero {
-    background-color: #4CABA6;
+    background-color: var(--bgHero);
     border-radius: 0 0 1rem  1rem;
-
+  
 }
 
 .logo {
     width: 8rem;
-}
+    float: right;}
 
 .carousel {
     display: flex;
@@ -68,6 +71,7 @@ main {
 .carousel-inner {
     margin-top: 2rem;
     width: 70%;
+    
     
 }
 .carousel-control-next:focus,
@@ -97,9 +101,8 @@ main {
 
 
 .row {
-    align-items: center;
+   justify-content: space-between;
 }
-
 .col-sm {
     display: flex;
     justify-content: center;
@@ -108,10 +111,13 @@ main {
 .tema {
     display: flex;
     justify-content: center;
-    background-color: #2fd1c8;
-    border-radius: 15px;
+    background-color: var(--bgTema);
+    border-radius: 5rem;
     width: 90%;
     margin-top: 2rem;
+}
+#footer{
+    background-color: var(--bgHero);
 }
 
 .conteudo {
@@ -131,8 +137,15 @@ main {
     .hero{
         width: 100%;
     }
+   .imgXoDengue {
+    padding-top: 1rem;
+    width:140%;
+    height: 100%;
+   }
     .logo {
-        display: none;
+       width: 50%;
+       float: right;
+       
     }
 
 }

@@ -16,9 +16,9 @@ section .section-title {
     margin-bottom: 50px;
     text-transform: uppercase;
 }
-#footer {
+/* #footer {
     background: #4CABA6 !important;
-}
+} */
 #footer h5{
 	padding-left: 10px;
     border-left: 3px solid #b81a1a;
