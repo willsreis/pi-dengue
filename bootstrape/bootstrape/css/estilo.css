@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .custom-nav {
     display: flex;
     justify-content: space-evenly !important;
