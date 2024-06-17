@@ -7,59 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/footer.css">
-    <link href="css\estilo.css" rel="stylesheet" type="text/css" />
-    <!--Links para o funcionamento do footer-->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Fim dos links do footer-->
+    <link href="./css/estilo.css" rel="stylesheet" type="text/css" />
+    
 </head>
 
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button id="menu-toggler" class="navbar-toggler custom-navbar-collapse" type="button" data-toggle="collapse"
-                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                aria-label="Alterna navegação">
+        <nav class="navbar navbar-expand-lg navbar-light"
+            style="box-shadow: 0 0 0.9vw 0.9vw rgba(0,0,0,0.1); background-color: rgb(90, 99, 156, .9); z-index: 100; width: 100%; position: fixed;">
+            <a style="margin: 0; padding: 0;" class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#1">O que é?<span class="sr-only">(Página atual)</span></a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100 justify-content-around custom-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#1">O que é?</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#2">Histórico<span class="sr-only">(Página atual)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#2">Histórico</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#3">Atualmente<span class="sr-only">(Página atual)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#3">Atualmente</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#4">Sintomas<span class="sr-only">(Página atual)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#4">Sintomas</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#5">Diagnóstico<span class="sr-only">(Página atual)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#5">Diagnóstico</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#6">Tratamento<span class="sr-only">(Página atual)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#6">Tratamento</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#7">Prevenção<span class="sr-only">(Página atual)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#7">Prevenção</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="container-fluid hero">
+
+
+
+
+
+    <main style="padding-top: 56px;">
+        <div class="container-fluid"
+            style="margin-bottom: 1rem; border-radius: 0px 0px 30px 30px; width: 100%; background-color: #9B86BD; display: flex; justify-content: space-evenly;">
             <div class="row">
-                <div class="col">
-<a><img class="imgXoDengue" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=50&pause=1000&color=B4E4D2&random=false&width=435&height=100&lines=X%C3%B4+Dengue!"
+                <div class="col-sm" style="display: flex; align-items: center; padding: 0 0;">
+                    <a class="mt-2"><img style="width: 320px;"
+                            src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=50&duration=3000&pause=1000&color=000&center=true&vCenter=true&random=false&width=435&lines=X%C3%B4+Dengue!!!"
                             alt="Typing SVG" /></a>
                 </div>
-                <div class="col">
-                    <img src="images\todos contra dengue(sem fundo).svg" class="logo  img-fluid  "
+                <div style="justify-content: center; display: flex; " class="col-sm">
+                    <img src="images\todos contra dengue(sem fundo).svg" class="img"
                         alt="Simbolo de proibido sobre a imagem do mosquito da dengue">
                 </div>
             </div>
@@ -67,77 +72,78 @@
 
 
 
-        <div class="container-fluid">
+        <div class="container-fluid" style="width: 90%;">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"
+                        style="filter: invert(1);"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" style="filter: invert(1);"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2" style="filter: invert(1);"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3" style="filter: invert(1);"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="images\prev1.svg" alt="Primeiro Slide">
+                        <img class="d-block mx-auto" style="width: 100%;" src="images\prev1.svg" alt="Primeiro Slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images\prev2.svg" alt="Segundo Slide">
+                        <img class="d-block mx-auto" style="width: 100%;" src="images\prev2.svg" alt="Segundo Slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images\prev3.svg" alt="Terceiro Slide">
+                        <img class="d-block mx-auto" style="width: 100%;" src="images\prev3.svg" alt="Terceiro Slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images\prev4.svg" alt="Quarto Slide">
+                        <img class="d-block mx-auto" style="width: 100%;" src="images\prev4.svg" alt="Quarto Slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
-                    <!-- <span class="sr-only">Anterior</span> -->
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                    <span class="sr-only">Anterior</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <!-- <span class="sr-only">Próximo</span> -->
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                    <span class="sr-only">Próximo</span>
                 </a>
             </div>
         </div>
 
 
 
-        <div class="container-fluid tema">
-            <h2 id="1">O que é?</h2>
+        <div class="container-fluid" style="width: 90%; background-color: #E2BBE9; border-radius: 60px;">
+            <h2 id="1" style="margin-top: 1rem;  padding: 0; display: flex; justify-content: center;">O que é?</h2>
         </div>
 
-        <div class="container-fluid conteudo">
+        <div class="container-fluid" style="width: 90%;">
             <div class="row">
-                <div class="col-sm">
-                    <img class="conteudo__imagem img-fluid" src="images\1.svg" class="img" alt="Mosquito da dengue">
+                <div class="col-sm" style="display: flex; justify-content: center;">
+                    <img class="img-fluid" src="images\1.svg" alt="Mosquito da dengue">
                 </div>
                 <div class="col-sm">
-                    <p class="conteudo__texto">A dengue é uma doença viral transmitida principalmente pela picada do
-                        mosquito Aedes aegypti infectado. Este mosquito é comum em áreas tropicais e subtropicais ao
-                        redor
-                        do mundo, especialmente em ambientes urbanos e semiurbanos. Existem quatro sorotipos
-                        diferentes do
-                        vírus da dengue (DEN-1, DEN-2, DEN-3 e DEN-4), todos os quais podem causar a doença em
-                        humanos. A
-                        dengue pode variar de uma doença leve a uma forma mais grave, conhecida como dengue grave ou
-                        dengue
-                        hemorrágica, que pode ser fatal se não for tratada adequadamente.</p>
+                    <p style="text-align: justify;">A dengue é uma doença viral transmitida
+                        principalmente pela picada do mosquito Aedes aegypti infectado. Este mosquito é comum em áreas
+                        tropicais e subtropicais ao
+                        redor do mundo, especialmente em ambientes urbanos e semiurbanos. Existem quatro sorotipos
+                        diferentes do vírus da dengue (DEN-1, DEN-2, DEN-3 e DEN-4), todos os quais podem causar a
+                        doença em
+                        humanos. A dengue pode variar de uma doença leve a uma forma mais grave, conhecida como dengue
+                        grave ou
+                        dengue hemorrágica, que pode ser fatal se não for tratada adequadamente.</p>
                 </div>
             </div>
         </div>
 
 
-        <div class="container-fluid tema">
-            <h2 id="2">Histórico</h2>
+        <div class="container-fluid" style="width: 90%; background-color: #E2BBE9; border-radius: 60px;">
+            <h2 id="2" style="margin-top: 1rem;  padding: 0; display: flex; justify-content: center;">Histórico</h2>
         </div>
 
-        <div class="container-fluid conteudo">
+        <div class="container-fluid" style="width: 90%;">
             <div class="row">
-                <div class="col-sm">
-                    <img class="conteudo__imagem img-fluid" src="images\2.svg" class="img" alt="Mosquito da dengue">
+                <div class="col-sm" style="display: flex; justify-content: center;">
+                    <img class="img-fluid" src="images\2.svg" class="img" alt="Mosquito no Egito">
                 </div>
                 <div class="col-sm">
-                    <p class="conteudo__texto">A dengue tem sido uma preocupação de saúde pública por séculos.
+                    <p style="text-align: justify;">A dengue tem sido uma preocupação de saúde
+                        pública por séculos.
                         Acredita-se que a doença tenha sido descrita pela primeira vez na China, durante a dinastia Jin,
                         há mais de 2.000 anos. Desde então, a dengue se espalhou por todo o mundo, especialmente nas
                         áreas tropicais e subtropicais da Ásia, África e América Latina. No século XX, a urbanização
@@ -150,18 +156,19 @@
 
 
 
-        <div class="container-fluid tema">
-            <h2 id="3">Atualmente</h2>
+        <div class="container-fluid" style="width: 90%; background-color: #E2BBE9; border-radius: 60px;">
+            <h2 id="3" style="margin-top: 1rem;  padding: 0; display: flex; justify-content: center;">Atualmente</h2>
         </div>
 
 
-        <div class="container-fluid conteudo">
+        <div class="container-fluid conteudo" style="width: 90%;">
             <div class="row">
-                <div class="col-sm">
-                    <img class="conteudo__imagem img-fluid" src="images\3.svg" class="img" alt="Mosquito da dengue">
+                <div class="col-sm" style="display: flex; justify-content: center;">
+                    <img class="img-fluid" src="images\3.svg" class="img" alt="Mosquito sobre o Brasil">
                 </div>
                 <div class="col-sm">
-                    <p class="conteudo__texto">A dengue sempre foi um problema, dos grandes, em países subtropicais e
+                    <p style="text-align: justify;">A dengue sempre foi um problema, dos
+                        grandes, em países subtropicais e
                         tropicais. As mudanças climáticas, a alta taxa de urbanização acontecendo a todo momento são
                         fatores que contribuem para que o mosquito Aedes Aegypti se propague com mais facilidade.
                         Ultimamente o surto de dengue tem piorado bastante, tanto sua propagação, quanto as
@@ -176,18 +183,19 @@
 
 
 
-        <div class="container-fluid tema">
-            <h2 id="4">Sintomas</h2>
+        <div class="container-fluid" style="width: 90%; background-color: #E2BBE9; border-radius: 60px;">
+            <h2 id="4" style="margin-top: 1rem;  padding: 0; display: flex; justify-content: center;">Sintomas</h2>
         </div>
 
 
-        <div class="container-fluid conteudo">
+        <div class="container-fluid" style="width: 90%;">
             <div class="row">
-                <div class="col-sm">
-                    <img class="conteudo__imagem img-fluid" src="images\4.svg" class="img" alt="Mosquito da dengue">
+                <div class="col-sm" style="display: flex; justify-content: center;">
+                    <img class="img-fluid" src="images\4.svg" class="img" alt="Sintomas no corpo">
                 </div>
                 <div class="col-sm">
-                    <p class="conteudo__texto">Os sintomas da dengue podem variar de leves a graves e geralmente
+                    <p style="text-align: justify;">Os sintomas da dengue podem variar de leves
+                        a graves e geralmente
                         aparecem de 4 a 10 dias após a picada do mosquito infectado. Os sintomas comuns incluem febre
                         alta, que pode durar de 2 a 7 dias, dor de cabeça intensa, dor atrás dos olhos, dor muscular e
                         nas articulações, fadiga, náusea, vômito e erupção cutânea. Em casos mais graves, conhecidos
@@ -201,18 +209,19 @@
 
 
 
-        <div class="container-fluid tema">
-            <h2 id="5">Diagnóstico</h2>
+        <div class="container-fluid" style="width: 90%; background-color: #E2BBE9; border-radius: 60px;">
+            <h2 id="5" style="margin-top: 1rem;  padding: 0; display: flex; justify-content: center;">Diagnóstico</h2>
         </div>
 
 
-        <div class="container-fluid conteudo">
+        <div class="container-fluid" style="width: 90%;">
             <div class="row">
-                <div class="col-sm">
-                    <img class="conteudo__imagem img-fluid" src="images\5.svg" class="img" alt="Mosquito da dengue">
+                <div class="col-sm" style="display: flex; justify-content: center;">
+                    <img class="img-fluid" src="images\5.svg" class="img" alt="Jaleco sujo + estetoscópio">
                 </div>
                 <div class="col-sm">
-                    <p class="conteudo__texto">O diagnóstico da dengue geralmente é feito com base nos sintomas do
+                    <p style="text-align: justify;">O diagnóstico da dengue geralmente é feito
+                        com base nos sintomas do
                         paciente, histórico de viagens e resultados de testes laboratoriais. Os testes laboratoriais
                         podem incluir a detecção de antígenos virais, anticorpos específicos ou reação em cadeia da
                         polimerase (PCR) para identificar o material genético do vírus da dengue. É importante realizar
@@ -225,18 +234,20 @@
 
 
 
-        <div class="container-fluid tema">
-            <h2 id="6">Tratamento</h2>
+        <div class="container-fluid" style="width: 90%; background-color: #E2BBE9; border-radius: 60px;">
+            <h2 id="6" style="margin-top: 1rem;  padding: 0; display: flex; justify-content: center;">Tratamento</h2>
         </div>
 
 
-        <div class="container-fluid conteudo">
+        <div class="container-fluid" style="width: 90%;">
             <div class="row">
-                <div class="col-sm">
-                    <img class="conteudo__imagem img-fluid" src="images\6.svg" class="img" alt="Mosquito da dengue">
+                <div class="col-sm" style="display: flex; justify-content: center;">
+                    <img class="img-fluid" src="images\6.svg" class="img"
+                        alt="Simbolo de proibido sobre cartelas de remédio">
                 </div>
                 <div class="col-sm">
-                    <p class="conteudo__texto">Atualmente não se conhece um tratamento específico contra a dengue, em
+                    <p style="text-align: justify;">Atualmente não se conhece um tratamento
+                        específico contra a dengue, em
                         casos de dengue hemorrágica, com vômitos recorrentes, pode ser necessária reidratação em
                         hospital, do contrário é recomendado que o doente beba bastante água, repouse, e procure ajuda
                         médica em caso de sangramento ou outros sinais de alerta, analgésicos e outros medicamentos
@@ -246,19 +257,21 @@
         </div>
 
 
-        <div class="container-fluid tema">
-            <h2 id="7">Prevenção</h2>
+        <div class="container-fluid" style="width: 90%; background-color: #E2BBE9; border-radius: 60px;">
+            <h2 id="7" style="margin-top: 1rem;  padding: 0; display: flex; justify-content: center;">Prevenção</h2>
         </div>
 
 
 
-        <div class="container-fluid conteudo">
+        <div class="container-fluid" style="width: 90%;">
             <div class="row">
-                <div class="col-sm">
-                    <img class="conteudo__imagem img-fluid" src="images\7.svg" class="img" alt="Mosquito da dengue">
+                <div class="col-sm" style="display: flex; justify-content: center;">
+                    <img class="img-fluid" src="images\7.svg" class="img"
+                        alt="Imagens de prevenção ao mosquito da dengue">
                 </div>
                 <div class="col-sm">
-                    <p class="conteudo__texto">A prevenção da dengue envolve medidas para reduzir a exposição às picadas
+                    <p class="conteudo__texto" style="text-align: justify;">A prevenção da dengue envolve medidas para
+                        reduzir a exposição às picadas
                         de mosquito e eliminar os criadouros de mosquitos em áreas residenciais e comunidades. Isso
                         inclui o uso de repelentes de insetos, roupas que cubram a maior parte do corpo, instalação de
                         telas em portas e janelas, uso de mosquiteiros durante o sono e aplicação de inseticidas em
@@ -272,42 +285,92 @@
 
 
 
-
-
-
     </main>
 
-
-
     <footer>
-        <!-- Footer -->
         <section id="footer">
-            <div class="row ">
-                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                    <ul class="list-unstyled list-inline social text-center">
-                        <!-- <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
-                                        class="fa fa-facebook"></i></a></li> -->
-                        <!-- <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
-                                        class="fa fa-twitter"></i></a></li> -->
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                    </ul>
+            <div class="container">
+                <section class="video-container">
+                    <h2>Vídeo relevante</h2>
+                    <iframe width="auto" height="200" src="https://www.youtube.com/embed/pX83UEQfrF8" frameborder="0"
+                        allowfullscreen></iframe>
+                </section>
+                <div class="row text-center text-xs-center text-sm-left text-md-left">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Quick links</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>Get Started</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>Videos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Quick links</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>Get Started</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>Videos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Quick links</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-angle-double-right"></i>Get Started</a></li>
+                            <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i
+                                        class="fa fa-angle-double-right"></i>Imprint</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <hr>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                    <p style="color:black;"><a href="#" style="color:rgb(228, 26, 26);">Xô Dengue! </a>
-                        is developed by DSM Fatec Indaiatuba Students</p>
-                    <p class="h6">© All right Reversed.<a class="text-green ml-2" href="#" target="_blank">Fatec
-                            Indaiatuba</a></p>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                        class="fa fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"
+                                    target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-            </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is
+                            a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp,
+                            Minneapolis, MN]</p>
+                        <p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com"
+                                target="_blank">Sunlimetech</a></p>
+                    </div>
+                    <hr>
+                </div>
             </div>
         </section>
-        <!-- ./Footer -->
     </footer>
 
 
@@ -315,16 +378,6 @@
 
 
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $(".navbar-nav .nav-link").on("click", function () {
-                $("#navbarTogglerDemo01").collapse("hide");
-            });
-        });
-    </script>
 
 
 
@@ -335,16 +388,32 @@
         h4[id],
         h5[id],
         h6[id] {
-            padding-top: 4rem;
-            /* Ajuste conforme necessário para compensar a altura da navbar */
-            margin-top: -4rem;
-            /* Compensa o padding para manter a posição original do conteúdo */
-            scroll-margin-top: .5rem;
+            scroll-margin-top: 4rem;
             /* Faz com que o navegador desconte a altura da navbar ao rolar */
         }
     </style>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Fecha a navbar ao clicar em um link
+            $('.navbar-nav a').on('click', function() {
+                if ($('.navbar-toggler').is(':visible')) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+    
+            // Fecha a navbar ao clicar novamente no botão do hamburguer
+            $('.navbar-toggler').on('click', function() {
+                if ($('.navbar-collapse').hasClass('show')) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+        });
+    </script>
+    
 
     <script>
         $(document).ready(function () {
