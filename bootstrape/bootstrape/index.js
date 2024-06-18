@@ -66,7 +66,7 @@ if (rawAlerta == 1) {
     nivelAlerta = 'vermelho'
     cardAtual.classList.add('bg-danger')
 }
-alertaTexto.textContent = `O nível de alerta foi ${nivelAlerta}!`
+alertaTexto.textContent = `O nível de alerta é ${nivelAlerta}!`
 }
 
 function unixConverter(timestamp){
