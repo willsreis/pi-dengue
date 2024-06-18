@@ -52,10 +52,10 @@ async function definirAlerta() {
 dadosJson = await buscarDados();
 
 let nivelAlerta;
-const rawAlerta = dadosJson[dadosJson.length - 1]['nivel'];
+const rawAlerta = dadosJson[0]['nivel'];
 if (rawAlerta == 1) {
     nivelAlerta = 'verde'
-    cardAtual.classList.add('bg-success')
+    cardAtual.classList.add('text-success')
 } else if (rawAlerta == 2){
     nivelAlerta = 'amarelo'
     cardAtual.classList.add('bg-warning')
@@ -66,14 +66,28 @@ if (rawAlerta == 1) {
     nivelAlerta = 'vermelho'
     cardAtual.classList.add('bg-danger')
 }
-alertaTexto.textContent = `O nível de alerta em Indaiatuba essa semana foi ${nivelAlerta}!`
+alertaTexto.textContent = `O nível de alerta foi ${nivelAlerta}!`
+}
+
+function unixConverter(timestamp){
+    let currentDate = new Date(timestamp)
+    let months = ['01','02','03','04','05','06','07','08','09','10','11','12'];
+    let year = currentDate.getFullYear();
+    let month= months[currentDate.getMonth()];
+    let date = currentDate.getDate();
+    currentDate = date+'/'+month+'/'+year
+    return currentDate
 }
 
 async function definirNroCasos(){
     let nroCasos;
+    let data;
     dadosJson = await buscarDados();
-    nroCasos = dadosJson[dadosJson.length - 1]['casos'];
-    casosTexto.textContent = `Indaiatuba teve ${nroCasos} casos de dengue essa semana`
+    nroCasos = dadosJson[0]['casos'];
+    data = dadosJson[0]['data_iniSE']
+    data = unixConverter(data)
+    casosTexto.textContent = `Indaiatuba teve ${nroCasos} casos de dengue essa semana (${data})`
+    return data
 }
 
 definirAlerta();
