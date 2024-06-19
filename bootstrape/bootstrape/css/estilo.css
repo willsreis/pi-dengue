@@ -20,10 +20,21 @@ body{
 }
 
 .textBanner {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0;
     display: flex;
     justify-content: center;
+    font-size: 1.75rem;
+    padding-bottom: 0.2rem;
+ 
+}
+.textBanner a{
+    color: black;
+}
+
+.textBanner a:hover{
+    color: rgb(252, 12, 12);
+ 
 }
 
 .cardAtual{
