@@ -72,9 +72,12 @@ alertaTexto.textContent = `O nível de alerta é ${nivelAlerta}!`
 function unixConverter(timestamp){
     let currentDate = new Date(timestamp)
     let months = ['01','02','03','04','05','06','07','08','09','10','11','12'];
-    let year = currentDate.getFullYear();
-    let month= months[currentDate.getMonth()];
-    let date = currentDate.getDate();
+    let year = String(currentDate.getFullYear());
+    let month= String(months[currentDate.getMonth()]);
+    let date = String(currentDate.getDate());
+    if (date.length<2) {
+        date = '0'+date
+    }
     currentDate = date+'/'+month+'/'+year
     return currentDate
 }

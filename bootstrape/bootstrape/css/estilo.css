@@ -22,6 +22,7 @@ body{
 .textBanner {
     margin-top: 1rem;
     padding: 0;
+    padding-bottom: 0.3rem;
     display: flex;
     justify-content: center;
 }
