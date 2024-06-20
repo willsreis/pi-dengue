@@ -39,7 +39,7 @@ async function buscarDados() {
     }
     catch(error){
         console.error('Não foi possível retornar os dados:', error);
-        return [];
+        return false;
     }}
 
 let dadosJson;
@@ -50,7 +50,9 @@ const cardAtual = document.getElementById('cardAtual')
 
 async function definirAlerta() {
 dadosJson = await buscarDados();
-
+if (dadosJson == false) {
+    alertaTexto.textContent = 'Sentimos muito, parece que ocorreu um erro ao buscar as informações'
+} else{
 let nivelAlerta;
 const rawAlerta = dadosJson[0]['nivel'];
 if (rawAlerta == 1) {
@@ -67,14 +69,18 @@ if (rawAlerta == 1) {
     cardAtual.classList.add('bg-danger')
 }
 alertaTexto.textContent = `O nível de alerta é ${nivelAlerta}!`
-}
+return true
+}}
 
 function unixConverter(timestamp){
     let currentDate = new Date(timestamp)
     let months = ['01','02','03','04','05','06','07','08','09','10','11','12'];
-    let year = currentDate.getFullYear();
-    let month= months[currentDate.getMonth()];
-    let date = currentDate.getDate();
+    let year = String(currentDate.getFullYear());
+    let month= String(months[currentDate.getMonth()]);
+    let date = String(currentDate.getDate());
+    if (date.length<2) {
+        date = '0'+date
+    }
     currentDate = date+'/'+month+'/'+year
     return currentDate
 }
@@ -90,5 +96,6 @@ async function definirNroCasos(){
     return data
 }
 
-definirAlerta();
-definirNroCasos();
+let apiStatus = definirAlerta();
+if (apiStatus != false){
+    definirNroCasos();}
