@@ -60,13 +60,13 @@ if (rawAlerta == 1) {
     cardAtual.classList.add('text-success')
 } else if (rawAlerta == 2){
     nivelAlerta = 'amarelo'
-    cardAtual.classList.add('bg-warning')
+    cardAtual.classList.add('text-warning')
 } else if (rawAlerta === 3){
     nivelAlerta = 'laranja'
-    cardAtual.classList.add('bg-warning')
+    cardAtual.classList.add('text-warning')
 } else{
     nivelAlerta = 'vermelho'
-    cardAtual.classList.add('bg-danger')
+    cardAtual.classList.add('text-danger')
 }
 alertaTexto.textContent = `O nível de alerta é ${nivelAlerta}!`
 return true
