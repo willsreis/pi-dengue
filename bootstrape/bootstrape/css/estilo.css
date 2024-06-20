@@ -20,11 +20,13 @@ body{
 }
 
 .textBanner {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0;
     padding-bottom: 0.3rem;
     display: flex;
     justify-content: center;
+    font-size: 1.75rem;
+    padding-bottom: 0.2rem;
 }
 
 .cardAtual{
@@ -38,6 +40,11 @@ body{
     left: 4rem
 }
 
+@media only screen and (max-width: 576px){
+    .mapa{
+        margin-left: 1rem;
+    }
+}
 
 
 /* Footer */
