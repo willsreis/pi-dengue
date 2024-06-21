@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </style>
         <script>
             setTimeout(function() {
-                window.location.href = "index.html"; // Alterar para o nome da página inicial
+                window.location.href = "../index.html"; // Alterar para o nome da página inicial
             }, 5000); // 10000 ms = 10 segundos
         </script>
     </head>
