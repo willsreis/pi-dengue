@@ -45,11 +45,10 @@ body{
     left: 4rem
 }
 
+/*Usar para estilos a serem aplicados apenas no breakpoint xs do bootstrap:
 @media only screen and (max-width: 576px){
-    .mapa{
-        margin-left: 1rem;
-    }
-}
+
+} */
 
 
 /* Footer */
