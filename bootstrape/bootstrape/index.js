@@ -1,35 +1,3 @@
-// let casos = [];
-// let data = [];
-// let jsonData;
-
-// fetch('data.json')
-//     .then(function(response){
-//         return response.json();
-//     })
-//     .then(function(json){
-//         jsonData = json.reverse();
-//         jsonData.forEach(function(item) {
-//             appendCase(item);
-//             appendDate(item);
-//         })
-//             console.log(casos);
-//         })
-//     .catch(function(error) {
-//         console.error('Erro:', error)
-//     });
-
-
-// function appendCase(object) {
-//     casos.push(object['casos'])
-// }
-
-// function appendDate(object) {
-//     rawDate = object['SE']
-//     let dataSemana = rawDate.slice(-2)
-//     let dataAno = rawDate.slice(0,4)
-//     actualDate = `Semana ${dataSemana} de ${dataAno}`
-//     data.push(actualDate)
-// }
 async function buscarDados() {
     try{
     const response = await fetch('./data.json')
@@ -99,3 +67,10 @@ async function definirNroCasos(){
 let apiStatus = definirAlerta();
 if (apiStatus != false){
     definirNroCasos();}
+
+//Mensagem de recebimento no formulário
+
+const submitBtn = document.getElementById('submitBtn')
+submitBtn.onclick = function() {
+    alert('Muito Obrigado por compartilhar a sua opinião!\nA página vai ser recarregada agora')
+}
