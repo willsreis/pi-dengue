@@ -1,25 +1,41 @@
-async function buscarDados() {
-    try{
-    const response = await fetch('https://cors-anywhere.herokuapp.com/https://info.dengue.mat.br/api/alertcity/?geocode=3520509&disease=dengue&format=json&ew_start=08&ey_start=2008&ew_end=25&ey_end=2029')
-    const jsonData = await response.json()
-    const results = jsonData.results || jsonData;
-    return results
-    }
-    catch(error){
-        console.error('Não foi possível retornar os dados:', error);
-        return false;
-    }}
-
-let dadosJson;
-
 const casosTexto = document.getElementById('casosTexto')
 const alertaTexto = document.getElementById('alertaTexto')
 const cardAtual = document.getElementById('cardAtual')
 
+async function buscarLocal() {
+    try{
+        let response = await fetch('./data.json')
+        let jsonData = await response.json()
+        let results = jsonData.results || jsonData
+        return results
+    }
+    catch(error){
+        console.error('Não foi possível retornar os dados:',error)
+        alertaTexto.textContent = 'Sentimos muito, parece que ocorreu um erro ao buscar as informações'
+        return false
+    }
+}
+
+async function buscarDados() {
+    try{
+    let response = await fetch('https://cors-anywhere.herokuapp.com/https://info.dengue.mat.br/api/alertcity/?geocode=3520509&disease=dengue&format=json&ew_start=08&ey_start=2008&ew_end=25&ey_end=2029')
+    let jsonData = await response.json()
+    let results = jsonData.results || jsonData;
+    return results
+    }
+    catch(error){
+        console.error('Não foi possível retornar os dados por meio da API, tentando localmente:', error);
+        results = await buscarLocal()
+        if (results != false){
+            return results;
+        }}}
+
+let dadosJson;
+
 async function definirAlerta() {
 dadosJson = await buscarDados();
 if (dadosJson == false) {
-    alertaTexto.textContent = 'Sentimos muito, parece que ocorreu um erro ao buscar as informações'
+    dadosJson = await buscarLocal()
 } else{
 let nivelAlerta;
 const rawAlerta = dadosJson[0]['nivel'];
@@ -39,6 +55,7 @@ if (rawAlerta == 1) {
 alertaTexto.textContent = `O nível de alerta é ${nivelAlerta}!`
 return true
 }}
+
 
 function unixConverter(timestamp){
     let currentDate = new Date(timestamp)

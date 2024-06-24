@@ -1,6 +1,19 @@
 // URL da API que fornece os dados de dengue com CORS Anywhere
 const apiUrl = 'https://cors-anywhere.herokuapp.com/https://info.dengue.mat.br/api/alertcity/?geocode=3520509&disease=dengue&format=json&ew_start=08&ey_start=2008&ew_end=25&ey_end=2029';
 
+// Função para buscar os dados localmente
+async function fetchLocal() {
+    try{
+        let response = await fetch('./data.json')
+        let data = await response.json()
+        let results = data.results || data;
+        return results
+    } catch (error) {
+        console.error('Erro ao buscar os dados localmente:', error)
+        return false
+    }
+}
+
 // Função para buscar os dados da API
 async function fetchDengueData() {
     try {
@@ -8,14 +21,18 @@ async function fetchDengueData() {
         const data = await response.json();
 
         // Verifica se os dados estão aninhados em um objeto "results"
-        const results = data.results || data;
+        let results = data.results || data;
 
         console.log('Dados brutos da API:', results);  // Verifica os dados recebidos
         return results;
     } catch (error) {
         console.error('Erro ao buscar dados da API:', error);
-        return [];
-    }
+        results = await fetchLocal()
+        if (results != false){
+        return results
+        } else{
+            return [];
+        }}
 }
 
 // Função para formatar os dados para o Chart.js
