@@ -1,6 +1,6 @@
 async function buscarDados() {
     try{
-    const response = await fetch('./data.json')
+    const response = await fetch('https://cors-anywhere.herokuapp.com/https://info.dengue.mat.br/api/alertcity/?geocode=3520509&disease=dengue&format=json&ew_start=08&ey_start=2008&ew_end=25&ey_end=2029')
     const jsonData = await response.json()
     const results = jsonData.results || jsonData;
     return results
