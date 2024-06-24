@@ -14,9 +14,9 @@
 </div>
 <br><br>
 <div align="center" style="text-align: center;">
+<h2>Integrantes do grupo</h2>
 <br> 
 
-<h2>Integrantes do grupo</h2>
 ## Artur Gomes  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/william-reis1989) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.linkedin.com/in/william-reis1989)
 ## Daniel Brito  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/william-reis1989) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.linkedin.com/in/william-reis1989)
 ## Eric Menegon  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/eric-vinicius-da-silva-menegon-123a24312) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ericmeneg)
