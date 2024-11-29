@@ -1,5 +1,5 @@
 // URL da API que fornece os dados de dengue com CORS Anywhere
-const apiUrl = 'https://cors-anywhere.herokuapp.com/https://info.dengue.mat.br/api/alertcity/?geocode=3520509&disease=dengue&format=json&ew_start=08&ey_start=2008&ew_end=25&ey_end=2029';
+const apiUrl = 'https://pidengue2backend.onrender.com/proxy/?url=https%3A%2F%2Finfo.dengue.mat.br%2Fapi%2Falertcity%2F%3Fgeocode%3D3520509%26disease%3Ddengue%26format%3Djson%26ew_start%3D44%26ey_start%3D1900%26ew_end%3D48%26ey_end%3D2999';
 
 // Função para buscar os dados localmente
 async function fetchLocal() {
